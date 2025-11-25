@@ -1,3 +1,4 @@
+```
 ===== README.md =====
 ---
 title: C++ Practice Exercises
@@ -18,15 +19,14 @@ Each exercise is split across header (`.hpp`), implementation (`.cpp`), and `mai
 
 ## File Layout
 
-
+```
 project-root/
 ├── QuickSort.hpp
 ├── QuickSort.cpp
 ├── MaxHeap.hpp
 ├── MaxHeap.cpp
 └── main.cpp
-
-scheme
+```
 
 ---
 
@@ -53,16 +53,25 @@ scheme
 ### Compile (Linux/macOS)
 ```bash
 g++ -std=c++17 main.cpp QuickSort.cpp MaxHeap.cpp -o exercises
+```
 
-Compile (Windows with MinGW)
-powershell
+### Compile (Windows with MinGW)
+```powershell
 g++ -std=c++17 main.cpp QuickSort.cpp MaxHeap.cpp -o exercises.exe
+```
 
-Compile (MSVC via Developer Command Prompt)
-bat
+### Compile (MSVC via Developer Command Prompt)
+```bat
 cl /std:c++17 main.cpp QuickSort.cpp MaxHeap.cpp
+```
 
-Run
-bash
+### Run
+```bash
 ./exercises        # Linux/macOS
 .\exercises.exe    # Windows
+```
+
+You should see output for:
+- Sorted array (quicksort)
+- Heap state after multiple `Add()` calls
+- Sequential removals using `RemoveMax()`
